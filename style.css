@@ -34,85 +34,179 @@ nav ul li {
 li {
     font-family: 'Roboto Flex', sans-serif;
     color: rgb(32, 84, 180)
-    font-size: large;
-    
+    font-size: large;   
 }
 
 a:visited { 
     text-decoration: none; 
-    color: rgb(72, 124, 221);
+    color: rgb(23, 121, 226)
    }
    
    /* NUTRITION LABEL */
    /* NUTRITION LABEL */
 
 
-#facts {
-    font-family: Open Sans, sans-serif; 
-    font-size: 16px;
-}
-
-.label {
-    border: 2px solid black;
-    border-radius: 8px;
-    width: 270px;
-    margin: 20px auto;
-    padding: 0 7px;
-}
-
-*{
+   #label {
+    font: normal 28px Helvetica, Arial, sans-serif;
+  }
+  
+  article {
+    width: 550px;
+    padding: 10px 15px 15px 15px;
+    border: 2px solid #000;
     box-sizing: border-box;
+    border-radius: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  dl,
+  dt,
+  dd {
+    margin: 0;
+  }
+  
+  dt,
+  dd {
+    display: inline;
+  }
+  
+  dt {
+    font-weight: 600;
+  }
+  
+  tbody th,
+  tbody td {
+    padding: 2px 0;
+    font-weight: normal;
+    border-top: 1px solid #000000;
+  }
+  
+  header {
+    border-bottom: 15px solid #000000;
+    margin-bottom: 5px;
+  }
+  
+  header p {
+    margin: 0;
+  }
+  
+  header dl {
+    display: inline-block;
+    width: 49.25%;
+    padding: 5px 0;
+  }
+  
+  header dl + dl {
+    text-align: right;
+  }
+  
+  header dl + dl dt {
+    font-weight: 500;
+  }
+  
+  h2 {
+    font-size: 1rem;
+    padding: 10px 0;
+    margin: 0;
+    border-top: 30px solid #000000;
+    border-bottom: 1px solid #000000;
+  }
+  
+  table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  
+  tr {
+    margin: 0;
+    text-align: left;
+  }
+  
+  table thead tr {
+    font-weight: 700;
+    text-align: right;
+  }
+  
+  td.indent + td dt,
+  td.indent + td dd {
+    font-weight: 500;
+  }
+  
+  table td:last-of-type {
+    text-align: right;
+  }
+  
+  table:first-of-type tbody:first-of-type td:last-of-type {
+    font-weight: 700;
+    text-align: right;
+  }
+  
+  table:first-of-type tbody:first-of-type {
+    border-bottom: 20px solid #000000;
+  }
+  
+  tfoot td:last-of-type {
+    padding: 0.5rem 0 0.5rem 0.7rem;
+    font-size: 0.9rem;
+    text-indent: -0.7rem;
+    font-weight: 400;
+    text-align: left;
+    border-top: 1px solid #000000;
+  }
+  
+  table + table {
+    font-size: 0.8rem;
+  }
+  
+  table + table tbody td {
+    padding: 2px 0;
+    font-weight: normal;
+    border-top: none;
+  }
+  
+  table + table th {
+    font-weight: normal;
+    border-bottom: 1px solid #000000;
+  }
+  
+  table + table td:last-of-type,
+  table + table th {
+    font-weight: 400;
+    text-align: left;
+  }
+  
+  td.indent {
+    width: 1rem;
+    border-top: none;
+  }
+  
+  table + table td.indent {
+    width: auto;
+    text-indent: 1.2rem;
+  }
+
+form{
+    margin-bottom: 10px;
+    margin-top: 11px;  
+}
+input[type=submit] {
+    width: 5.5em;  height: 2em;
+    border-radius: 10px;
+    color: white;
+    font-family: open sans, sans serif;
+    background-color: rgb(23, 121, 226);
+}
+input[type=text] {
+    margin: 7px 13px 5px 20px;
+    width: 13em; 
+    height: 2em;
 }
 
-header labelh1{
-    text-align: center;
-    margin: -4px 0px 0px -35px ;
-    letter-spacing: .25px;
-    font-size: 27px;
-}
-
-#labelp{
-    margin: 0px;
-}
-.divider {
-    border-bottom: 1px solid #888989;
-    margin: 2px 0;
-    clear: right;
-}
- .bold {
-    font-weight: bold;
- }
- .right {
-    float: right;
- }
-
-.lg {
-    height: 10px;
-}
-.lg, .md {
-    background-color: black;
-}
-.sm-text {
-    font-size:0.85rem;
-}
-.calories-info h1 {
-    margin: -4px -2px 0 2px;
-}
-.calories-info span {
-    margin: -5px -1px;
-    overflow: hidden;
-    font-size: 1.2em;
-    
-}
-.md {
-   height: 5px; 
-}
-#grams {
-    margin: 0 0px 0 6px;
-}
-indent{
-    margin-left: 1em;
-}
-.daily-value p:(.no-divider) {
-    border-bottom: 1px solid #888989;
+p{
+    margin: 8px 8px 8px 8px;
 }

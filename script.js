@@ -1,4 +1,4 @@
-const query = '1lb brisket and fries'
+const query = '10oz steak'
 $.ajax({
     method: 'GET',
     url: 'https://api.api-ninjas.com/v1/nutrition?query=' + query,
@@ -11,11 +11,10 @@ $.ajax({
         console.error('Error: ', jqXHR.responseText);
     }
 });
-	
-	
-	
 
-
+$('button').click(function(){
+   $.post(query);
+  });
 
 
 
