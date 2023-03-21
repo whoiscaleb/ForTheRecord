@@ -37,9 +37,82 @@ li {
     font-size: large;
     
 }
+
 a:visited { 
     text-decoration: none; 
     color: rgb(72, 124, 221);
    }
+   
+   /* NUTRITION LABEL */
+   /* NUTRITION LABEL */
 
- 
+
+#facts {
+    font-family: Open Sans, sans-serif; 
+    font-size: 16px;
+}
+
+.label {
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 270px;
+    margin: 20px auto;
+    padding: 0 7px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+header labelh1{
+    text-align: center;
+    margin: -4px 0px 0px -35px ;
+    letter-spacing: .25px;
+    font-size: 27px;
+}
+
+#labelp{
+    margin: 0px;
+}
+.divider {
+    border-bottom: 1px solid #888989;
+    margin: 2px 0;
+    clear: right;
+}
+ .bold {
+    font-weight: bold;
+ }
+ .right {
+    float: right;
+ }
+
+.lg {
+    height: 10px;
+}
+.lg, .md {
+    background-color: black;
+}
+.sm-text {
+    font-size:0.85rem;
+}
+.calories-info h1 {
+    margin: -4px -2px 0 2px;
+}
+.calories-info span {
+    margin: -5px -1px;
+    overflow: hidden;
+    font-size: 1.2em;
+    
+}
+.md {
+   height: 5px; 
+}
+#grams {
+    margin: 0 0px 0 6px;
+}
+indent{
+    margin-left: 1em;
+}
+.daily-value p:(.no-divider) {
+    border-bottom: 1px solid #888989;
+}
