@@ -34,11 +34,11 @@
 
 
     <section>
-        <p>Make your healthy decisions a bit easier</p>
+        <p class="slogan">Healthy starts with what you eat.</p>
     </section>
 
     <form>
-        <input type="text"
+        <input id="query" type="text"
         placeholder="Input Your Food Here"/>
         <input type="submit"
         placeholder="Analyze"/>
@@ -55,11 +55,11 @@
             <h2>Amount Per Serving</h2>
             <dl>
               <dt>Calories</dt>
-              <dd>230</dd>
+              <dd id="calories"></dd>
             </dl>
             <dl>
-              <dt>Calories from Fat</dt>
-              <dd>40</dd>
+              <dt id="caloriesfromfat">Calories from Fat</dt>
+              <dd id="fatcal"></dd>
             </dl>
           </header>
           <table>
@@ -75,74 +75,74 @@
                 <th colspan="2" scope="row">
                   <dl>
                     <dt>Total Fat</dt>
-                    <dd>8g</dd>
+                    <dd id="totalfat">g</dd>
                   </dl>
                 </th>
-                <td>12%</td>
+                <td></td>
               </tr>
               <tr>
                 <td class="indent"></td>
                 <td>
                   <dl>
                     <dt>Saturated Fat</dt>
-                    <dd>1g</dd>
+                    <dd id="satfat">g</dd>
                   </dl>
                 </td>
-                <td>5%</td>
+                <td></td>
               </tr>
-              <tr>
+              <!-- <tr>
                 <td class="indent"></td>
                 <td>
                   <dl>
                     <dt><em>Trans</em> Fat</dt>
-                    <dd>0g</dd>
+                    <dd id="tr">g</dd>
                   </dl>
                 </td>
-                <td></td>
+                <td></td> -->
               </tr>
               <tr>
                 <th colspan="2" scope="row">
                   <dl>
                     <dt>Cholesterol</dt>
-                    <dd>0mg</dd>
+                    <dd id="cholesterol">mg</dd>
                   </dl>
                 </th>
-                <td>0%</td>
+                <td></td>
               </tr>
               <tr>
                 <th colspan="2" scope="row">
                   <dl>
                     <dt>Sodium</dt>
-                    <dd>160mg</dd>
+                    <dd id="sodium">mg</dd>
                   </dl>
                 </th>
-                <td>7%</td>
+                <td></td>
               </tr>
               <tr>
                 <th colspan="2" scope="row">
                   <dl>
                     <dt>Total Carbohydrate</dt>
-                    <dd>37mg</dd>
+                    <dd id="totalcarb">mg</dd>
                   </dl>
                 </th>
-                <td>12%</td>
+                <td></td>
               </tr>
               <tr>
                 <td class="indent"></td>
                 <td>
                   <dl>
                     <dt>Dietary Fiber</dt>
-                    <dd>4g</dd>
+                    <dd id="fiber">g</dd>
                   </dl>
                 </td>
-                <td>16%</td>
+                <td></td>
               </tr>
               <tr>
                 <td class="indent"></td>
                 <td>
                   <dl>
                     <dt>Sugars</dt>
-                    <dd>1g</dd>
+                    <dd id="sugar">g</dd>
                   </dl>
                 </td>
                 <td></td>
@@ -151,7 +151,7 @@
                 <th colspan="2" scope="row">
                   <dl>
                     <dt>Protein</dt>
-                    <dd>3g</dd>
+                    <dd id="protein">g</dd>
                   </dl>
                 </th>
                 <td></td>
@@ -160,19 +160,19 @@
             <tbody>
               <tr>
                 <th colspan="2" scope="row">Vitamin A</th>
-                <td>10%</td>
+                <td></td>
               </tr>
               <tr>
                 <th colspan="2" scope="row">Vitamin C</th>
-                <td>8%</td>
+                <td></td>
               </tr>
               <tr>
                 <th colspan="2" scope="row">Calcium</th>
-                <td>20%</td>
+                <td></td>
               </tr>
               <tr>
                 <th colspan="2" scope="row">Iron</th>
-                <td>45%</td>
+                <td></td>
               </tr>
             </tbody>
             <tfoot>

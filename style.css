@@ -210,3 +210,8 @@ input[type=text] {
 p{
     margin: 8px 8px 8px 8px;
 }
+.slogan{
+    font-family: open sans, sans serif;
+    font-weight: 800;
+    font-size: large;
+}
