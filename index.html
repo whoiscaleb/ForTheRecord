@@ -39,7 +39,7 @@
 
     <form>
         <input id="query" type="text"
-        placeholder="Input Your Food Here"/>
+        placeholder="Type to search.."/>
         <input type="submit"
         placeholder="Analyze"/>
     </form>
@@ -50,17 +50,16 @@
         <article>
           <header>
             <h1>Nutrition Facts</h1>
-            <p>Serving Size 2/3 cup (55g)</p>
-            <p>Servings Per Container About 8</p>
+            <dd>Serving Size </dd><dd id="servingsize"></dd><dd>g</dd>
             <h2>Amount Per Serving</h2>
             <dl>
               <dt>Calories</dt>
               <dd id="calories"></dd>
             </dl>
-            <dl>
+            <!-- <dl>
               <dt id="caloriesfromfat">Calories from Fat</dt>
               <dd id="fatcal"></dd>
-            </dl>
+            </dl> -->
           </header>
           <table>
             <thead>
@@ -75,7 +74,7 @@
                 <th colspan="2" scope="row">
                   <dl>
                     <dt>Total Fat</dt>
-                    <dd id="totalfat">g</dd>
+                    <dd id="totalfat"></dd><dd>g</dd>
                   </dl>
                 </th>
                 <td></td>
@@ -85,7 +84,7 @@
                 <td>
                   <dl>
                     <dt>Saturated Fat</dt>
-                    <dd id="satfat">g</dd>
+                    <dd id="satfat"></dd><dd>g</dd>
                   </dl>
                 </td>
                 <td></td>
@@ -104,7 +103,7 @@
                 <th colspan="2" scope="row">
                   <dl>
                     <dt>Cholesterol</dt>
-                    <dd id="cholesterol">mg</dd>
+                    <dd id="cholesterol"></dd><dd>mg</dd>
                   </dl>
                 </th>
                 <td></td>
@@ -113,7 +112,7 @@
                 <th colspan="2" scope="row">
                   <dl>
                     <dt>Sodium</dt>
-                    <dd id="sodium">mg</dd>
+                    <dd id="sodium"></dd><dd>mg</dd>
                   </dl>
                 </th>
                 <td></td>
@@ -122,27 +121,27 @@
                 <th colspan="2" scope="row">
                   <dl>
                     <dt>Total Carbohydrate</dt>
-                    <dd id="totalcarb">mg</dd>
+                    <dd id="totalcarb"></dd><dd>g</dd>
                   </dl>
                 </th>
                 <td></td>
               </tr>
               <tr>
                 <td class="indent"></td>
-                <td>
+                <!-- <td>
                   <dl>
                     <dt>Dietary Fiber</dt>
                     <dd id="fiber">g</dd>
                   </dl>
                 </td>
-                <td></td>
+                <td></td> -->
               </tr>
               <tr>
                 <td class="indent"></td>
                 <td>
                   <dl>
                     <dt>Sugars</dt>
-                    <dd id="sugar">g</dd>
+                    <dd id="sugar"></dd><dd>g</dd>
                   </dl>
                 </td>
                 <td></td>
@@ -151,7 +150,7 @@
                 <th colspan="2" scope="row">
                   <dl>
                     <dt>Protein</dt>
-                    <dd id="protein">g</dd>
+                    <dd id="protein"></dd><dd>g</dd>
                   </dl>
                 </th>
                 <td></td>

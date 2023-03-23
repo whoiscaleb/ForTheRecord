@@ -9,6 +9,16 @@ function handleGetData(event) {
         contentType: 'application/json',
         success: function(result) {
             console.log(result);
+            const data = result[0]
+            $("#calories").text(data.calories)
+            $("#totalfat").text(data.fat_total_g)
+            $("#satfat").text(data.fat_saturated_g) 
+            $("#cholesterol").text(data.cholesterol_mg)
+            $("#sodium").text(data.sodium_mg)
+            $("#totalcarb").text(data.carbohydrates_total_g)
+            $("#servingsize").text(data.serving_size_g)
+            $("#sugar").text(data.sugar_g)
+            $("#protein").text(data.protein_g)
         },
         error: function ajaxError(jqXHR) {
             console.error('Error: ', jqXHR.responseText);
@@ -17,6 +27,7 @@ function handleGetData(event) {
 }
 
 $('form').on('submit', handleGetData);
+
 
 
 
